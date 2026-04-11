@@ -1,0 +1,27 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+
+<section class="fullscreen">
+  <div class="character-box">
+
+    <h1>About This Journey</h1>
+
+    <p>
+      Welcome to Darb Al-Asala. You will explore Saudi culture and history in an interactive way.
+    </p>
+
+  </div>
+</section>
+
+<!-- NAV -->
+<div class="nav-controls">
+  <a href="{% url 'home' %}" class="nav-btn">🏠 Home</a>
+  <a href="#" class="nav-btn disabled">⬅ Back</a>
+  <a href="#" class="nav-btn">➡ Next</a>
+</div>
+
+{% endblock %}

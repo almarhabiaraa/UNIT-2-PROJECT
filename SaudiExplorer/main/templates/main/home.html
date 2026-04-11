@@ -1,0 +1,54 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %}رحّالة{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="hero fullscreen">
+  <h1 class="hero-title">
+    رحّــالة <br>
+    <span>اكتشف التراث السعودي</span>
+  </h1>
+
+  <p class="hero-subtitle">
+    رحلة تفاعلية عبر الثقافة السعودية، عاداتها، وتاريخها الأصيل.
+  </p>
+</section>
+
+<!-- ══════════════════ EDITORIAL INTRO ══════════════════ -->
+
+<!-- CHARACTER -->
+<section class="character heritage">
+
+  <div class="character-container">
+
+    <!-- LEFT: Khalid -->
+    <div class="character-image">
+      <img src="{% static 'images/khalid.png' %}" alt="خالد">
+    </div>
+
+    <!-- RIGHT: Content -->
+    <div class="character-content">
+
+      <h2 class="character-title">
+        مرحبًا بك في رحّالة
+      </h2>
+
+      <p class="character-text">
+        أنا خالد، دليلك في هذه الرحلة لاستكشاف ملامح التراث السعودي،
+        من العادات والتقاليد، إلى الأزياء والمأكولات، وكل ما يعكس أصالة هذا الوطن.
+      </p>
+
+      <a href="#" class="btn btn-primary">
+        ابدأ الرحلة
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+{% endblock %}
