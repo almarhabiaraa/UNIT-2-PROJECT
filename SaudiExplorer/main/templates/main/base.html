@@ -1,47 +1,48 @@
 {% load static %}
-
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" data-theme="light">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>{% block title %}رحالة{% endblock %}</title>
+  <!-- Title -->
+  <title>{% block title %}Ghosn{% endblock %}</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <!-- CSS -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
-  <script src="{% static 'js/main.js' %}"></script>
+  <!-- Theme -->
+  <script>
+    (function(){
+      const t = localStorage.getItem('ghosn-theme') || 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  {% block extra_head %}{% endblock %}
+</head>
 
 <body>
 
-  <!-- TOPBAR -->
-   
-  <!--Logo-->
-  <div class="topbar">
-    <div class="logo">رحالة</div>
 
-    <!-- NAV LINKS -->
-  <div class="topbar-nav">
-    <a href="#">الرئيسية</a>
-    <a href="#">اكتشف</a>
-    <a href="#">العب</a>
+  <!-- Navbar -->
+  {% include 'main/partials/navbar.html' %}
+
+
+  <div class="page-wrapper">
+
+    <!-- Content -->
+    {% block content %}{% endblock %}
+
   </div>
 
-    <div class="topbar-controls">
-        <button id="theme-toggle" class="ctrl-btn">🌙</button>
-    </div>
-  </div>
+  <!-- Footer -->
+  {% include 'main/partials/footer.html' %}
 
-  <!-- MAIN CONTENT -->
-  {% block content %}
-  {% endblock %}
+  <!-- JS -->
+  <script src="{% static 'js/main.js' %}"></script>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    made with love by araa
-  </footer>
-
+  {% block extra_scripts %}{% endblock %}
+  
 </body>
 </html>
