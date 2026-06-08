@@ -1,76 +1,85 @@
-# UNIT-2-PROJECT
+# 🌿 Ghosn – Saudi Agriculture Explorer
 
-## Using Django create a project about our beloved kingdom of your choosing. Examples :
-- Tourism in Saudi Arabia.
-- Culture & Heritage in Saudi Arabia.
-- Manufacturing & Industries in Saudi Arabia.
-- Agriculture in Saudi Arabia.
-- Science in Saudi Arabia.
-- History of Saudi Arabia.
-- etc.....
+**Ghosn — Arabic for “branch” — explores the rich agricultural heritage across the Kingdom of Saudi Arabia.**
 
+Ghosn is a modern, interactive, and educational web platform that highlights Saudi Arabia’s agricultural diversity, traditional farming practices, regional crops, and the role of technology in shaping the future of agriculture.
 
-# Minumum Requirements
-- Use Django.
-- Use templates & templates inheritance.
-- Use dynamic urls where applicable.
-- Use static files where applicable.
-- homepage + at least 6 pages.
-- Coherent, uniform design .
-- Implement dark and light mode.
-- Must be Responsive. 
-- You can use a CSS library to style your website (such as Bootstrap or equivalent)
-- You can use a cdn or a cloud storage to host large files such as large videos (example: Goolge Firebase Cloud Storage: https://firebase.google.com/docs/storage)
+---
 
+## 🌱 About the Project
 
+Ghosn is designed as a storytelling and exploration platform that takes users on a visual and interactive journey through:
 
-# Example : TOURISM-PROJECT
+- Agricultural regions of Saudi Arabia
+- Traditional and modern farming practices
+- Local crops and seasonal produce
+- Agricultural technologies and innovations
+- Fun educational facts and quizzes
 
-## Using Django create a website for Tourism in Saudi Arabia . The project name is : Tourister
+The goal is to make agricultural knowledge accessible, engaging, and visually appealing for all age groups.
 
-### Your website has the following pages :
+---
 
-#### "" : home page , with the following content:
-- Title of the page , with a catchy phrase about tourism in Saudi Arabia
-- A single wide image covering the page.
-- A paragraph about the tourism in Saudi Arabia in General.
-- A list of cities pages with links to them (the pages are listed down below).
+## ✨ Features
 
+- 🌗 Light / Dark mode toggle (saved using cookies)
+- 📱 Fully responsive design (mobile-first)
+- 🗺️ Regional agriculture exploration
+- 🌾 Crop and farming information cards
+- 💡 Educational facts section
+- 🧠 Interactive quiz system
+- 🎨 Modern UI with smooth animations
+- 🧭 Navigation system with active page tracking
 
-#### "city/Riyadh/"
-- Title of city with a catchy phrase
-- A Gallery of images (you can use a Carousel) for the city.
-- A short video about the city . (you can embed a youtube video , or use a video hosted on your website)
-- Top Attraction of the city.
-- A briefe history / timeline of the city.
-- Major events in the city.
+---
 
-#### "city/Abha/"
-- Title of city with a catchy phrase.
-- Top Attractions in the city.
-- A brief about the city.
-- A Gallery of images (you can use a Carousel) for the city.
-- A short video about the city . (you can embed a youtube video , or use a video hosted on your website)
-- Top Attraction of the city.
-- A briefe history / timeline of the city.
-- Major events in the city.
+## 🛠️ Built With
 
-#### "city/Mekkah/"
-- Title of city with a catchy phrase.
-- Top Attractions in the city.
-- A brief about the city.
-- A Gallery of images (you can use a Carousel) for the city.
-- A short video about the city . (you can embed a youtube video , or use a video hosted on your website)
-- Top Attraction of the city.
-- A briefe history / timeline of the city.
-- Major events in the city.
+- HTML5
+- CSS3 (Custom design system + CSS variables)
+- JavaScript (Vanilla JS)
+- Cookies (for theme persistence)
+- Intersection Observer API (scroll animations)
 
-#### "city/AlUla/"
-- Title of city with a catchy phrase.
-- Top Attractions in the city.
-- A brief about the city.
-- A Gallery of images (you can use a Carousel) for the city.
-- A short video about the city . (you can embed a youtube video , or use a video hosted on your website)
-- Top Attraction of the city.
-- A briefe history / timeline of the city.
-- Major events in the city.
+---
+
+## 🎨 Design Philosophy
+
+Ghosn is inspired by:
+- Minimalism and natural aesthetics
+- Earth tones and agricultural greens
+- Soft gradients representing land and growth
+- A balance between education and storytelling
+---
+
+## 🚀 Getting Started
+
+To run the project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/ghosn.git
+
+# Open the project folder
+cd ghosn
+
+# Open index.html in your browser
+
+```
+---
+
+## 🍃 Purpose
+
+This project was created as an educational and cultural platform to highlight the importance of agriculture in Saudi Arabia and to present it in a modern, interactive way using web technologies.
+
+📌 Future Improvements
+Add backend integration for dynamic content
+Multilingual support (Arabic / English)
+User accounts and progress tracking for quizzes
+Map-based agricultural exploration
+AI-based crop recommendations
+
+---
+
+## 👩‍💻 Author
+Developed by Araa Almarhabi
